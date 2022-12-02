@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt="Spotify"><a href="/">Spotify</a></div>>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="https://support.spotify.com/us/article/what-is-spotify/" target="_blank">About</a></li>
+                <li><a href="https://www.spotify.com/us/premium/" target="_blank">Premium</a></li>
+                <li id="login"><a href="https://accounts.spotify.com/en/login" target="_blank">Log in</a></li>
+                <li id="signup"><a href="https://www.spotify.com/us/signup" target="_blank">Sign up</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="https://support.spotify.com/us/article/what-is-spotify/" target="_blank">About</a></li>
+                <li><a href="https://www.spotify.com/us/premium/" target="_blank">Premium</a></li>
+                <li id="login"><a href="https://accounts.spotify.com/en/login" target="_blank">Login</a></li>
+                <li id="signup"><a href="https://www.spotify.com/us/signup" target="_blank">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Nirmal's Favourite Songs</h3>
+        <div class="songlist" id="songList">
+
+            <!-- <div class="song">
+                <img alt="">
+                <span class="songName">Let me Love You</span>
+                <span>05:34<i class="songPlay fa-solid fa-circle-play"></i></span>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="playbar" min="0" value="0" max="100">
+        <div class="playback_icons">
+            <i class="fa-solid fa-backward-fast" id="prev"></i>
+            <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-fast" id="next"></i>
+
+        </div>
+        <div id="songinfo">
+            Kojola Sokur
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c5009e06c9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
