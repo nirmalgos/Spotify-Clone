@@ -202,7 +202,6 @@ ul li:hover {
     width: 2vw;
     font-size: 1.2rem;
     margin: 0 0.3rem;
-
 }
 
 #songinfo {
@@ -213,7 +212,7 @@ ul li:hover {
 
 @media only screen and (max-width: 768px) {
     html {
-        font-size: 62.5%;
+        font-size: 69%;
     }
 
     header nav {
@@ -229,20 +228,26 @@ ul li:hover {
     }
 
     .container {
-        min-height: 50rem;
+        min-height: 38.5rem;
         width: 75%;
     }
 
     .song {
-        margin: 1rem auto;
+        margin: 1.4rem auto;
     }
 
     .bottom {
         height: 3vh;
     }
 
+    .playback_icons i {
+        width: 4vw;
+        font-size: 2rem;
+        margin: 0 0.3rem;
+    }
 
     #songinfo {
         bottom: 12px;
+        font-size: 1.5rem;
     }
 }
